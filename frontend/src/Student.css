@@ -1,0 +1,151 @@
+/* Global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif; /* Apply Roboto font globally */
+  background-color: #f4f4f4; /* Light background for contrast */
+}
+
+.Main-Container {
+  max-width: 900px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.First-Div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Butt {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500; /* Medium weight for the button */
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.Butt:hover {
+  background-color: #0056b3;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.Update, .Delete {
+  flex: 1;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.ButtonContainer .Delete {
+  margin-right: 0;
+}
+
+.Update {
+  padding: 8px 12px;
+  background-color: #60ef7a;
+  color: #14211f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500; /* Medium weight for buttons */
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.Update:hover {
+  background-color: #17e23c;
+}
+
+.Delete {
+  padding: 8px 12px;
+  background-color: #fa3f3f;
+  color: #0f1817;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500; /* Medium weight for buttons */
+  transition: background-color 0.3s ease;
+}
+
+.Delete:hover {
+  background-color: #f00909;
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px; /* Adjusted font size for better readability */
+}
+
+.table thead th {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+  border-right: 2px solid #dee2e6;
+  font-weight: 700; /* Bold font for table headers */
+}
+
+.table thead th:last-child {
+  border-right: none;
+}
+
+.table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  border-right: 2px solid #dee2e6;
+}
+
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.table tbody td:last-child {
+  border-right: none;
+}
+
+.table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Main-Container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .Butt {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

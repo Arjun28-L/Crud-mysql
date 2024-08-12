@@ -1,0 +1,121 @@
+/* Apply the font globally */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Light background for contrast */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+}
+
+/* Main container for the form */
+.Main-Container-1 {
+    max-width: 900px; /* Increased width for a larger form */
+    width: 100%; /* Ensures the container takes up the full width */
+    padding: 40px; /* Ample padding for spacing */
+    background-color: #ffffff; /* White background for the form */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for depth */
+    border-radius: 12px; /* Softer rounded corners */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Internal wrapper for form content */
+.First-Div-1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form heading */
+h2 {
+    font-size: 30px; /* Larger font size for the heading */
+    color: #333333; /* Darker color for the heading */
+    margin-bottom: 25px; /* More space below the heading */
+    font-weight: 500; /* Medium weight for a balanced look */
+}
+
+/* Wrapper for each input and label */
+.inner-div1 {
+    width: 100%;
+    margin-bottom: 20px; /* More space between form elements */
+}
+
+/* Styling for labels */
+label {
+    display: block;
+    font-size: 18px; /* Larger font size for better readability */
+    color: #555555; /* Neutral color for labels */
+    margin-bottom: 8px; /* Space between label and input */
+    font-weight: 500;
+}
+
+/* Styling for input fields */
+.Form-Control {
+    width: 100%; /* Full width for inputs */
+    padding: 14px 18px; /* Increased padding for a larger input area */
+    font-size: 18px; /* Larger font size */
+    border: 1px solid #cccccc; /* Light border */
+    border-radius: 6px; /* Slightly rounder corners */
+    box-sizing: border-box; /* Ensures padding is included in the width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+    font-family: 'Roboto', sans-serif; /* Ensure font is applied to inputs */
+}
+
+/* Focus effect for inputs */
+.Form-Control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Light shadow effect */
+    outline: none; /* Removes default outline */
+}
+
+/* Button styling */
+.Butt-1 {
+    padding: 14px 22px; /* Larger padding for a bigger button */
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 20px; /* Larger font size for the button */
+    font-weight: 700; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition effects */
+    text-decoration: none;
+    display: inline-block;
+    width: 100%; /* Full width button */
+    text-align: center; /* Centered text */
+    box-sizing: border-box;
+}
+
+/* Hover effect for the button */
+.Butt-1:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Responsive Design: Adjust form width for smaller screens */
+@media (max-width: 768px) {
+    .Main-Container-1 {
+        max-width: 95%; /* Adjusts width to fit smaller screens */
+        padding: 30px; /* Adjusts padding */
+    }
+
+    h2 {
+        font-size: 24px; /* Slightly smaller font for heading on smaller screens */
+    }
+
+    .Form-Control {
+        font-size: 16px; /* Adjust input font size for smaller screens */
+        padding: 12px 16px; /* Adjust input padding */
+    }
+
+    .Butt-1 {
+        font-size: 18px; /* Adjust button font size */
+        padding: 12px 20px; /* Adjust button padding */
+    }
+}
